@@ -36,3 +36,19 @@ function fibRec(n) {
 }
 
 console.log(fibRec(8));  // returns [0,1,1,2,3,5,8,13]
+
+// mergeSort
+
+function mergeSort(arr) {
+  
+  if (arr.length <= 1) return arr;
+
+  let midpoint = Math.floor(arr.length / 2);
+  let leftArr = mergeSort(arr.slice(0, midpoint));
+  let rightArr = mergeSort(arr.slice(midpoint));
+  
+  return merge(leftArr, rightArr);
+
+}
+
+
