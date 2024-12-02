@@ -51,4 +51,21 @@ function mergeSort(arr) {
 
 }
 
+function merge(leftArr, rightArr) {
+  
+  let sortedArr = []
+  
+  while (leftArr.length && rightArr.length) {
+    if (leftArr[0] < rightArr[0]) {
+      sortedArr.push(leftArr.shift());
+    } else {
+      sortedArr.push(rightArr.shift());
+    }
+  }
+  
+  return sortedArr.concat(leftArr, rightArr);
+
+}
+
+console.log(mergeSort([100,2,34,5,1,4,21,11,90,13,3]));
 
