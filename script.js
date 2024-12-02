@@ -17,3 +17,22 @@ function fib(n) {
 }
 
 console.log(fib(8)); // returns [0,1,1,2,3,5,8,13]
+
+// recursion
+
+function fibRec(n) {
+  
+  if (n == 0) return [];
+  if (n == 1) return [0];
+  if (n == 2) return [0,1];
+  
+  let fib = fibRec(n-1);
+  
+  let nextVal = fib[fib.length-1] + fib[fib.length-2];
+    fib.push(nextVal);        
+  
+  return fib;
+  
+}
+
+console.log(fibRec(8));  // returns [0,1,1,2,3,5,8,13]
