@@ -1,4 +1,4 @@
-// iterative fibonacci
+//// iterative fibonacci
 
 function fib(n) {
     
@@ -18,7 +18,7 @@ function fib(n) {
 
 console.log(fib(8)); // returns [0,1,1,2,3,5,8,13]
 
-// recursion
+//// recursion
 
 function fibRec(n) {
   
@@ -37,7 +37,7 @@ function fibRec(n) {
 
 console.log(fibRec(8));  // returns [0,1,1,2,3,5,8,13]
 
-// mergeSort
+//// mergeSort
 
 function mergeSort(arr) {
   
@@ -67,5 +67,5 @@ function merge(leftArr, rightArr) {
 
 }
 
-console.log(mergeSort([100,2,34,5,1,4,21,11,90,13,3]));
+console.log(mergeSort([83,2,34,5,1,4,21,11,90,13,3])); // [1,2,3,4,5,11,13,21,34,83,90]
 
